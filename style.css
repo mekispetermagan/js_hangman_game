@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: Cousine, monospace;
+  font-size: 20px;
+  color: rgb(245, 245, 245);
+}
+
+body{
+  background-color: rgb(168, 176, 192);
+}
+
+.container {
+  width: 600px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "title title title title"
+    "riddle riddle riddle errors"
+    "alphabet alphabet alphabet alphabet"
+    "new movies countries cities"
+    "author author author author";
+}
+
+.title {
+  grid-area: title;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.riddle {
+  grid-area: riddle;
+  padding: 10px 20px;
+  background-color: rgb(30, 30, 60);
+  border: 5px solid rgb(30, 30, 108);
+  border-radius: 10px;
+}
+
+.errors {
+  grid-area: errors;
+  padding: 10px;
+  border: 5px solid rgb(108, 30, 30);
+  border-radius: 10px;
+}
+
+.alphabet{
+  grid-area: alphabet;
+  width: 600px;
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 11px;
+  grid-template-columns: repeat(13, 36px);
+}
+
+.lettercard {
+  display: inline-block;
+  background-color: rgb(30, 30, 90);
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 rgb(30, 30, 90, 0.4);
+}
+
+.lettercard:hover {
+  transform: scale(1.1);
+  background-color: rgb(30, 30, 108);
+  cursor: grab;
+}
+
+.button {
+  padding: 10px;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.new {
+  grid-area: new;
+  background-color: rgb(180, 180, 30);
+}
+
+.movies {
+  grid-area: movies;
+}
+
+.countries {
+  grid-area: countries;
+}
+
+.cities {
+  grid-area: cities;
+}
+
+.author {
+  grid-area: author;
+  margin-top: 30px;
+  text-shadow: 2px 1px 2px rgb(30, 30, 90, 0.4);
+}

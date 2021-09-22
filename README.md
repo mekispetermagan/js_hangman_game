@@ -6,3 +6,5 @@ Playable in three topics:
 - movie titles
 - countries
 - cities
+
+![Screenshot](screenshot.png)
